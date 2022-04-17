@@ -25,7 +25,7 @@ class ExecutableFileParser(object):
         self.process = subprocess.Popen(cmds,
                                         stdin=subprocess.PIPE,
                                         stdout=subprocess.PIPE,
-                                        stderr=subprocess.PIPE,
+                                        # stderr=subprocess.PIPE,
                                         text=True,
                                         encoding="utf-8",
                                         )
@@ -44,7 +44,7 @@ class ExecutableFileParser(object):
     def stop(self):
         self.process.stdin.close()
         self.process.stdout.close()
-        self.process.stderr.close()
+        # self.process.stderr.close()
         self.process.wait(1)
 
 
