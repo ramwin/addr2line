@@ -1,5 +1,5 @@
 """
-this module will create a background process (addr2line -g -e filename)
+this module will create a background process (addr2line -f -e filename)
 """
 
 
